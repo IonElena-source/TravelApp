@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.project1.R;
 
-public class AmericaDeSud extends AppCompatActivity {
+public class SouthAmerica extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

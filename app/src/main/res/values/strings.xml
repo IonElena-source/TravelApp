@@ -31,5 +31,10 @@
     <string name="Upload">Upload</string>
     <string name="Type">Type of travel</string>
     <string name="NoPhotoSelected">No Photo Selected</string>
+    <string name="Europa">Europa</string>
+    <string name="Asia">Asia</string>
+    <string name="txtAmericaNord">North America</string>
+    <string name="SouthAmerica">South America</string>
+    <string name="Australia">Australia</string>
 
 </resources>

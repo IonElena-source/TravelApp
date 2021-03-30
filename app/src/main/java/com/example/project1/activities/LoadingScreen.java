@@ -18,7 +18,10 @@ public class LoadingScreen extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(LoadingScreen.this, MyTrips.class));
+                finish();
             }
         },2000);
+
     }
+
 }
