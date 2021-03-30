@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".activities.MyTrips"></activity>
+        <activity android:name=".activities.Australia" />
+        <activity android:name=".activities.AmericaDeSud" />
+        <activity android:name=".activities.AmericadeNord" />
+        <activity android:name=".activities.Africa" />
+        <activity android:name=".activities.Asia" />
+        <activity android:name=".activities.Europa" />
+        <activity android:name=".activities.LoadingScreen" />
+        <activity android:name=".activities.Wishlist" />
+        <activity android:name=".forms.AddTrip" />
+        <activity android:name=".activities.Settings" />
+        <activity android:name=".activities.Statistics" />
+        <activity android:name=".activities.Favorites" />
+        <activity android:name=".activities.Upcoming" />
+        <activity android:name=".authentification.ForgotPassword" />
+        <activity android:name=".authentification.SignUp" />
+        <activity android:name=".authentification.LogIn" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

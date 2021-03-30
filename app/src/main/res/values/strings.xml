@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="btnLogIn" formatted="true">Log&#160;In</string>
+    <string name="btnSignUp">Sign&#160;Up</string>
+    <string name="noAccount"><u>Continue without an account</u></string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="forNoAccount">"Dont'have account?"</string>
+    <string name="txtSignUpHere">Sing up here</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintConfirmPassword">Confirm Password</string>
+    <string name="AlreadyHaveAnAccount">Already have an account?</string>
+    <string name="btnForgotPassword">Forgot Password</string>
+    <string name="btnResetPassword">Reset Password</string>
+    <string name="myTrips">My Trips</string>
+    <string name="UpconmingTrips">Upconming Trips</string>
+    <string name="UpcomingTrips">Upcoming Trips</string>
+    <string name="Wishlist">Wishlist</string>
+    <string name="statistics">Statistics</string>
+    <string name="Settings">Settings</string>
+    <string name="LogOut">Log Out</string>
+    <string name="Destination"><font size="29"> Destination</font></string>
+    <string name="addTrip">Add Trip</string>
+    <string name="Where">Where have you been?</string>
+    <string name="Period">Period</string>
+    <string name="Note">Note</string>
+    <string name="leave">Departure Date</string>
+    <string name="arrivalDate">Arrival Date</string>
+    <string name="Description">Description</string>
+    <string name="chosePhoto">Choose</string>
+    <string name="Upload">Upload</string>
+    <string name="Type">Type of travel</string>
+    <string name="NoPhotoSelected">No Photo Selected</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4DBEF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="434dp"
+
+        android:layout_gravity="center"
+        android:src="@drawable/back_main"></ImageView>
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/bottom_shape"
+        android:width="160dp"
+        android:height="50dp"
+        android:backgroundTint="@color/white"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/btnLogIn"
+        android:alpha="0.8"
+        android:textColor="#80000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+     ></Button>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:width="160dp"
+        android:alpha="0.8"
+        android:background="@drawable/bottom_shape"
+        android:height="50dp"
+        android:backgroundTint="@color/white"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/btnSignUp"
+        android:textColor="#80000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+         />
+
+
+</LinearLayout>
