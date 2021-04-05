@@ -36,5 +36,7 @@
     <string name="txtAmericaNord">North America</string>
     <string name="SouthAmerica">South America</string>
     <string name="Australia">Australia</string>
+    <string name="textOops">Oops! Your list is empty!<br> </br>Looks like you haven \&#39;t added anything to your cart yet</string>
+    <string name="add">Add</string>
 
 </resources>

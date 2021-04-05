@@ -203,7 +203,7 @@
 
                 <EditText
                     android:layout_width="match_parent"
-
+                    android:id="@+id/etDescription"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
@@ -250,17 +250,10 @@
                     android:layout_marginRight="5dp"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#7AA1E3"
-                        android:text="@string/chosePhoto"
-                        android:id="@+id/btnChoose"
-                        android:layout_height="wrap_content">
-                    </Button>
                     <ImageView
                         android:layout_width="50dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
                         android:layout_gravity="center"
                         android:layout_height="45dp"
                         android:src="@drawable/camera__1_">
@@ -269,10 +262,12 @@
                         android:layout_width="wrap_content"
                         android:layout_weight="1"
                         android:background="#7AA1E3"
-                        android:text="@string/Upload"
-                        android:id="@+id/btnUpload"
+                        android:text="@string/chosePhoto"
+                        android:id="@+id/btnChoose"
                         android:layout_height="wrap_content">
                     </Button>
+
+
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -288,8 +283,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:id="@+id/ratingNote"
                     android:progressTint="#76CCF2"></RatingBar>
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="@string/add"
+                    android:id="@+id/btnAdd"
+                    android:background="#7AA1E3"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content">
 
+                </Button>
             </LinearLayout>
 
         </ScrollView>

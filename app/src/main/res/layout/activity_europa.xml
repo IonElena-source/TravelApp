@@ -1,9 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.Europa">
+    android:background="@drawable/my_trips"
+    android:fitsSystemWindows="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/headerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_menu"></include>
+
+        <ScrollView
+            android:id="@+id/toolbal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_home">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:context=".MainActivity">
+
+                <ListView
+                    android:id="@+id/listViewTravel"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="600dp"
+                    >
+
+                </ListView>
+
+                <ImageView
+                    android:id="@+id/imgOops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/oops"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="#82b1ff"
+                    android:alpha="1"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:id="@+id/txtOops"
+                    android:text="@string/textOops"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="@string/addTrip"
+                    android:id="@+id/btnAddTrip"
+                    android:backgroundTint="#89B0F1"
+                    android:layout_height="wrap_content">
+
+                </Button>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include layout="@layout/principal_menu"></include>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

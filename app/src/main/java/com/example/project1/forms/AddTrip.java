@@ -9,16 +9,19 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Trace;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.project1.R;
 import com.example.project1.adapters.SpinnerCustomAdapter;
+import com.example.project1.models.Travel;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -106,7 +109,35 @@ public class AddTrip extends AppCompatActivity {
               startActivityForResult(intent,PICK_IMAGE);
             }
         });
-        Button btnUpload=findViewById(R.id.btnUpload);
+
+
+        //add travel
+        Button btnAddTrip=findViewById(R.id.btnAdd);
+        btnAddTrip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText editTextDestination=findViewById(R.id.editTextDestination);
+                String destination=editTextDestination.getText().toString();
+                String departureDate=textViewLeaveDate.getText().toString();
+                String arrivalDate=textViewArrivalDate.getText().toString();
+                EditText editTextDescription=findViewById(R.id.etDescription);
+                String description=editTextDescription.getText().toString();
+                String type=spinnerTypeTravel.getSelectedItem().toString();
+                RatingBar ratingBar=findViewById(R.id.ratingNote);
+                float note=ratingBar.getRating();
+                ArrayList<String>imageListConverted=new ArrayList<>();
+                for(int i=0;i<imageList.size();i++){
+                    imageListConverted.add(imageList.get(i).toString());
+                }
+                Travel travel=new Travel(destination,description,departureDate,arrivalDate,type,imageListConverted,note);
+                Intent intent=getIntent();
+                if(intent.hasExtra("NameContinent")){
+                    intent.putExtra("Travel",travel);
+                    setResult(RESULT_OK,intent);
+                    finish();
+                }
+            }
+        });
     }
 
     @Override
@@ -127,4 +158,5 @@ public class AddTrip extends AppCompatActivity {
             }
         }
     }
+
 }

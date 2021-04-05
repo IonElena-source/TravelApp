@@ -1,9 +1,12 @@
 package com.example.project1.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.project1.ManipulationMenu;
 import com.example.project1.R;
@@ -18,5 +21,13 @@ public class MyTrips extends AppCompatActivity {
         ManipulationMenu manipulationMenu=new ManipulationMenu(getApplicationContext(),drawerLayout);
         manipulationMenu.addUsernameInMenu();
         manipulationMenu.operateMenu();
+        CardView cardViewEuropa=findViewById(R.id.cardViewEuropa);
+        cardViewEuropa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MyTrips.this,Europa.class);
+                startActivity(intent);
+            }
+        });
     }
 }

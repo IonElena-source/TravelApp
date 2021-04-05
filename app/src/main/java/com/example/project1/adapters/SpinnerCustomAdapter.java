@@ -87,7 +87,7 @@ public class SpinnerCustomAdapter extends ArrayAdapter<String> {
                 imageViewTypeTravel.setImageResource(R.drawable.family);
                 return convertView;
             case "Solo Travel":
-                imageViewTypeTravel.setImageResource(R.drawable.traveler);
+                imageViewTypeTravel.setImageResource(R.drawable.hiker);
                 return convertView;
             case "Group Travel":
                 imageViewTypeTravel.setImageResource(R.drawable.excursion);
