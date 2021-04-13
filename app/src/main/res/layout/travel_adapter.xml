@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adapter_period"
+        android:backgroundTint="#7AA1E3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+                <TextView
+
+                    android:id="@+id/adapterDestinationTravel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:layout_gravity="center"
+                    android:text="Destinatie"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#E8F5FF"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:textSize="24dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:id="@+id/imageTypeTravel"
+                    android:src="@drawable/briefcase__1_"></ImageView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/adapterDepartureDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/adapter_period"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="12.08.2020"
+                    android:textColor="#90C3EB"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <View
+                    app:layout_constraintLeft_toRightOf="@id/adapterDepartureDate"
+                    android:layout_width="25dp"
+                    android:layout_height="2dp"
+                    android:background="#76B6E8"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/viewBetweenPeriods"
+
+                    app:layout_constraintTop_toBottomOf="@id/adapterDestinationTravel">
+                </View>
+
+                <TextView
+                    android:id="@+id/adapterArrivalDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/adapter_period"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="12.08.2020"
+                    android:textColor="#90C3EB"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="@id/viewBetweenPeriods"
+                    app:layout_constraintTop_toBottomOf="@id/adapterDestinationTravel"></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
